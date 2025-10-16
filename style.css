@@ -42,5 +42,6 @@ table,
         }
         input [type="text"]
         {
-              color: blueviolet;  
+              color: blueviolet
+              cd "C:\Users\qc\Desktop\start";  
         }
