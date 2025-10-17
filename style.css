@@ -1,47 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
+table,th,td{
+    border-style: ridge;
+    position: relative;
+    max-width: 100%;
+    border-collapse: collapse;
+
 }
-table,
-        th,
-        td {
-
-            border-collapse: collapse;
-        }
-
-        th {
-            width: 30%;
-        }
-
-        tr {
-            border-bottom: 1px solid lightslategray
-        }
-
-        tr :hover {
-            background-color: aquamarine;
-
-
-        }
-
-        #sur {
-
-           
-            background-color: aquamarine;
-            padding: 15px;
-        }
-        #sur p{
-            display:none;
-        }
-        #sur:hover p {
-            display: block;
-            background-color: burlywood;
-        }
-        #pre{
-            background-color: darkgray;
-            padding: 40px;
-        }
-        input [type="text"]
-        {
-              color: blueviolet
-               
-        }

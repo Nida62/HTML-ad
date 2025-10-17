@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>tags</title>
+</head>
+
+<body>
+    <nav>
+        <a href="#rt">Resume Template</a>
+        <a href="#pro">Product Table</a>
+        <a href="#blog">Blog Page Layout</a>
+        <a href="#reg">Registration Page</a>
+        <a href="#news">News Article Page</a>
+    </nav>
+    <hr>
+    <!-- RESUME TEMPLATE -->
+    <section id="rt">
+        <h2>Resume Template</h2><br>
+        <hr>
+        <label for="pic">🦸‍♀️ </label><br>
+        <br>
+        <input type="file" name="pic" id="pic">
+        <form action="/.php">
+
+            <textarea  rows="10">Summary</textarea><br>
+            <br>
+            <label for="username">📌Name</label>
+            <input type="text" id="username" placeholder="Nida Ashraf">
+            <label for="email">📧Email:</label>
+            <input type="email" id="email" placeholder="nidaashraf435@gmail.com">
+            <label for="phone">📞phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. 0325-7534798" pattern="[0-9]{4}-[0-9]{7}"
+                title="Phone number format: 0325-7534798">
+            <br>
+            <hr>
+            <br>
+        </form>
+        <form action=".php">
+            <p><strong> SKILLS </strong></p>
+            <label for="volume-co"></label>
+            <input type="text" id="volume-co" placeholder="Enter Your Skill">
+            <input type="range" id="volume-c" name="valme" min="0" max="100" value="50">
+            <span id="val1">100%</span>
+            <br>
+            <br>
+            <label for="vol"></label>
+            <input type="text" id="vol" placeholder="Enter Your Skill">
+            <input type="range" id="vol2" name="volme" min="0" max="100" value="50">
+            <span id="va">100%</span><br>
+            <br>
+            <input type="submit" value="Submit">
+
+        </form>
+        <hr>
+        <form action=".php">
+            <p><strong> LANGUAGES </strong></p>
+            <label for="volume"></label>
+            <P>Urdu</P>
+            <input type="range" id="volume" name="vol" min="0" max="100" value="50">
+            <span id="val">100%</span>
+            <br>
+            <br>
+            <label for="volll"></label>
+            <P>English</P>
+            <input type="range" id="volll" name="voll" min="0" max="100" value="50">
+            <span id="spn">100%</span><br>
+            <br>
+
+        </form>
+        <hr>
+        <!-- PRODUCT TABLE -->
+        <table id="pro">
+            <caption>Product List</caption>
+            <tr>
+                <th>Serial No.</th>
+                <th>Product Name </th>
+                <th>Product Size</th>
+                <th>Product Price</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Watches</td>
+                <td>Medium</td>
+                <td>1000</td>
+
+
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Shirts</td>
+                <td>Large</td>
+                <td>2000rs</td>
+
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Jewelry</td>
+                <td>Medium</td>
+                <td>2300rs</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Rings</td>
+                <td>Large</td>
+                <td>500rs</td>
+
+            </tr>
+        </table>
+        <hr>
+    </section>
+    <!-- BLOG -->
+    <article id="blog">
+       <img src="download(1).png" alt="nopicsir">
+
+        <div>
+            <article>
+                <h2>🏄‍♂️ My First Blog Post</h2>
+                <div>Posted on October 15, 2025 by Nida Ashraf</div>
+                <p>
+                    Welcome to my blog! This is my first post where I’ll share my thoughts about web development.
+                    Blogging is a great way to learn, teach, and connect with others online.
+                </p>
+            </article>
+
+            <article>
+                <h2>💻 Learning HTML Basics</h2>
+                <div>Posted on October 10, 2025 by Admin</div>
+                <p>
+                    HTML stands for HyperText Markup Language. It'ss the structure of every webpage.
+                    In this post, we'll learn how to create headings, paragraphs, and links.
+                </p>
+            </article>
+        </div>
+    </article>
+
+    <footer>
+        &copy; 2025 | My 1st Blog | All Rights Reserved | Nida Ashraf👧
+    </footer>
+    <hr>
+    <!-- NEWS ARTICLE -->
+
+    <article id="news">
+        <header>
+            <h2>DAWN NEWS</h2>
+            <span>| Posted on October 15, 2025 </span>
+        </header>
+
+        <img src="png-transparent-muhammad-ali-jinnah.png" alt="nopic" style="width: 70px;">
+        <blockquote cite="news@app.com.pk">
+            <p> Quaid-i-Azam Muhammad Ali Jinnah was a leader of great eminence, who changed the direction of history of
+                the South Asian region by transforming the Muslims of South Asia from a minority community to a nation.
+                A leader, having a long-term perspective of goals and strategies can convince others of the genuineness
+                of his cause and these qualities could be identified in Jinnah's personal life, professional career as a
+                brilliant lawyer, his political career.
+                Jinnah could be described as the creation of the political, socio-economic and historical environment of
+                the beginning of the 20th Century. However, he did not stay trapped in the milieu of his time.</p>
+        </blockquote>
+
+    </article>
+    <footer>
+        &copy; 2025 |DAWN News | All Rights Reserved
+
+    </footer>
+    <hr>
+    <!-- validate Registration -->
+    <form action="/.php" id="reg">
+        <br>
+        <h3>Registration Page</h3><br>
+        <br>
+        <label for="username2">📌Name</label>
+        <input type="text" id="username2" placeholder="Nida Ashraf" required><br>
+        <label for="pswd">🔒Password:</label>
+        <input type="password" id="pswd" required><br>
+        <label for="cnfrm">🔐Confirm password</label>
+        <input type="password" id="cnfrm">
+        <br>
+        <input type="submit" value="submit">
+        <hr>
+        <br>
+    </form>
+
+</body>
+
+</html>
