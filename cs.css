@@ -1,0 +1,226 @@
+*{
+ background-color: rgb(169, 247, 221);
+   font-family: 'Poppins', sans-serif;
+     box-sizing: border-box;
+}
+body.fade{
+      opacity: 1;
+  transition: opacity 0.6s ease;
+}
+body.fadeout{
+    opacity: 0;
+}
+
+.wib {
+    background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip:  text;
+     -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 2rem;
+   ;
+}
+ul, li{
+     list-style-type: none;
+      text-shadow: 2px 2px 2px red;
+}
+
+h1::before {
+    color: rgb(228, 136, 211);
+    content: "🙌";
+}
+
+h1::after {
+    color: rgb(68, 87, 87);
+    content: "⭐";
+}
+h1::selection{
+    background-color: blue;
+
+}
+
+p::first-letter {
+    size: 4rem;
+    color: aqua;
+}
+
+a[href^="https"] {
+    color: rgba(37, 7, 119, 0.445);
+}
+
+input[type="text"] {
+    border: 1px solid red;
+
+}
+
+button:hover {
+    color: aqua;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    cursor: pointer;
+   
+}
+
+li:nth-child(odd) {
+    color: brown;
+}
+
+a [href^="https"] :focus {
+    color: blue;
+
+}
+
+a:focus-visible{
+  size: 3rem;
+}
+
+.v  p{
+    display: block;
+    background-image: radial-gradient(circle at top left, blue, white);
+    width: 70%;
+  height: 60%;
+  padding: 10px 5px 10px 5px;
+  border: 3px dotted black;
+    font-size: clamp(1rem, 2vw, 2rem);
+
+}
+
+.d p {
+    background-image: linear-gradient(to right, orange, green);
+      display: flex;
+    font-weight: bold;
+    ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+      width: 70%;
+  height: 60%;
+  padding: 10px 5px 10px 5px  ;
+
+      animation: spin 3s linear infinite;
+}
+@keyframes spin{
+    from{transform: rotateX(0deg)} 
+    to {
+        transform: rotateX(360deg)
+    }
+}
+#img {
+     
+      background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      max-width: 300px;
+      height: 200px; 
+        -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent);
+  mask-image: linear-gradient(to bottom, black 80%, transparent);
+        animation: blur 2s ease infinite;
+   
+}
+@keyframes blur{
+    0%{ filter: blur(0px)  brightness(100%);}
+    50%{ filter: blur(6px) brightness(120%);}
+    100%{ filter: blur(0px) brightness(100%);}
+}
+.blend-demo {
+  width: 400px;
+  height: 250px;
+  background-image: url('https://picsum.photos/600/400');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+
+.container {
+    width: 250px;
+    height: 120px;
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: scroll;
+  }
+ #trans {
+    background-color: aqua;
+    width: 200%;
+    height: 100%;
+    transition-duration:  2s;
+    transition-property: width, height;
+ }
+ #trans:hover{
+    width: 200px;
+    height: 200px;
+ }
+ .tra{
+    
+    width: 300px;
+    height: 200px;
+    transform: rotateY(20deg);
+    animation-name: colorchange;
+    animation-iteration-count: infinite;
+    animation-direction:  alternate;
+    animation-duration: 3s;
+   
+ }
+
+@keyframes colorchange{
+    from{background-color: #4facfe;}
+    to{background-color: rgb(55, 55, 103);}
+
+}
+.scene{
+    perspective: 600px;
+    width: 100%;
+    height: 100%;
+    margin: 150px auto;
+     
+
+}
+.cube{
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    transform: rotate(45deg);
+    transition: transform 1s;
+      
+  filter: drop-shadow(5px 10px 5px yellow);
+       
+
+
+}
+.scene:hover .cube{
+    transform: rotateY(180deg);
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+
+}
+
+/* Elements */
+.card__title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card__text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card__button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card__button--highlight {
+  background-color: #2563eb;
+  color: white;
+}
+
+ 
