@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projcss.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>CSS Project</title>
+</head>
+
+<body>
+    <header>
+
+        <nav class="nav">
+            <h1 class="animate__animated animate__heartBeat animate__infinite">PORTFOLIO</h1>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#sec1">📌Profile Page</a></li>
+                <li> <a href="#sec2">🕸Login Form</a></li>
+                <li><a href="#sec3">🛒Product Card</a></li>
+            </ul>
+
+            <img id="img" class="animate__animated animate__bounceOutUp animate__infinite"
+                src="download__1___1_-removebg-preview.png" alt="Animated Image" />
+
+
+        </nav>
+    </header>
+    <section id="sec1">
+        <div class="vedio-container">
+            < <video autoplay muted loop id="ved">
+                <source src="169330-841069090_tiny.mp4" type="video/mp4">
+                </video>
+                <div class="content">
+                    <div id="left">
+                        <img src="download (1) (1).png" alt="no image" />
+                    </div>
+                    <div class="about">
+                        <h2>About Me</h2>
+                        <p>Passionate about web development and creating user-friendly, responsive websites.Motivated
+                            learner with skills in HTML, CSS, JavaScript, and modern design practices.<br>Creative
+                            thinker who enjoys turning ideas into interactive digital experiences</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="sec2">
+        <div class="form ">
+            <form onsubmit="handleLogin(event)">
+                <div class="log-form animate__animated animate__flipInY ">
+                    <h1 id="h1">Login Form</h1>
+
+                    <div class="cont">
+                        <label for="urnme">Username:</label><br>
+                        <input type="text" id="urnme" placeholder="Your Name" required><br>
+
+                        <label for="pwd">Password:</label><br>
+                        <input type="password" id="pwd" placeholder="Password" required><br><br>
+
+                        <button type="submit" class="btn">Login</button>
+                        <br><br>
+                        <button type="button" class="btn">Register Now</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="sec3">
+        <div class="main-card">
+            <h3>Product Card🛒</h3>
+            <div class="child">
+                <div class="child2">
+                    <figure>
+                        <img src="download (2) (1).jpg" alt="noimg" />
+                        <figcaption class="figcap">Here's to countless journeys and endless destinations</figcaption>
+                    </figure>
+                </div>
+                <div class="child2">
+                    <img src="download (4).jpg" alt="noimg" />
+                    <figcaption class="figcap">Here's to countless journeys and endless destinations</figcaption>
+                    </figure>
+                </div>
+                <div class="child2">
+                    <img src="download (5).jpg" alt="noimg" />
+                    <figcaption class="figcap">Here's to countless journeys and endless destinations</figcaption>
+                    </figure>
+                </div>
+                <div class="child2">
+                    <img src="download (1) (1).jpg" alt="noimg" />
+                    <figcaption class="figcap">Here's to countless journeys and endless destinations</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
